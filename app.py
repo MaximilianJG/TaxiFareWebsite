@@ -64,7 +64,7 @@ if show_instructions:
         Either as with the title by just creating a string (or an f-string). Or as with this paragraph using the `st.` functions
         ''')
     
-    controller_instructions = '''
+    controller_instructions.markdown('''
         ## Here we would like to add some controllers in order to ask the user to select the parameters of the ride
 
         1. Let's ask for:
@@ -74,9 +74,9 @@ if show_instructions:
         - dropoff longitude
         - dropoff latitude
         - passenger count
-        '''
+        ''')
     
-    api_instructions = '''
+    api_instructions.markdown('''
         ## Once we have these, let's call our API in order to retrieve a prediction
 
         See ? No need to load a `model.joblib` file in this app, we do not even need to know anything about Data Science in order to retrieve a prediction...
@@ -90,6 +90,6 @@ if show_instructions:
         4. Let's retrieve the prediction from the **JSON** returned by the API...
 
         ## Finally, we can display the prediction to the user
-        '''
+        ''')
     
     
